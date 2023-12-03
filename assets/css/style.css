@@ -276,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: #09203a;
+  background: #09203a ;
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -327,7 +327,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0);
+  background: #09203a;
   padding: 30px;
 }
 
@@ -1103,3 +1103,318 @@ section .container {
   }
 }
 
+/* game */
+   /* New styles for the game */
+   #game-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+  }
+
+  .recycle-bin {
+    width: 100px;
+    height: 100px;
+    background-color: #6d9ca0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .hidden-card {
+    cursor: pointer;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #6d9ca0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    user-select: none;
+    transition: transform 0.2s ease-in-out;
+    visibility: hidden;
+  }
+
+  #attempts {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #6d9ca0;
+  }
+
+  /* Calculater */
+  #upload-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 12%;
+}
+#fileInput {
+    display: none;
+}
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8ad68d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+label:hover {
+    background-color: #45a049;
+}
+#uploadBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+#uploadBtn:hover {
+    background-color: #2980b9;
+}
+#preview {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#sizeDropdown {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#quantityInput {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#calculateBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2980b9;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+#calculateBtn:hover {
+    background-color: #d35400;
+}
+
+/* Games */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.button {
+  text-align: center;
+  width: calc(33.33% - 20px); /* Adjust width and margin as needed */
+  border: 1px solid #ddd; /* Add border style as needed */
+  padding: 10px;
+  margin-right: 20px; /* Adjust right margin for spacing */
+  position: relative;
+}
+
+.button h4 {
+  margin: 0;
+  color: #fff; /* Adjust text color as needed */
+}
+
+.button img {
+  width: 100%;
+  height: auto;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.title {
+  font-size: 20px; /* Adjust font size as needed */
+}
+
+/* Transactions */
+
+   /* Animated Title */
+   .animated-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* Add this line to set initial width */
+    animation: typing 2s steps(11) infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  /* Square Curved Border */
+  .square-border {
+    border: 2px solid skyblue;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5%;
+    width: 700px;
+    margin-left: 25%;
+  }
+
+  .square-border h3 {
+    margin: 0;
+    color: skyblue;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 85%;
+  }
+
+  .total-transaction {
+    font-size: 30px;
+    font-weight:300;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .total-transaction h4{
+    font-size: 30px;
+    
+  }
+
+  
+
+  /* Choose where to use your voucher */
+  .choose-voucher {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 3%;
+    margin-left: 10%;
+  }
+
+  .Store h6 {
+    font-size: 90%;
+    margin: 0 auto; /* Center the element */
+    text-align: center; /* Center the text within the element */
+    margin-bottom: 40%;
+    margin-right: 30;
+  }
+  
+
+  /* Clickable Buttons */
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    margin-top: 3%;
+  }
+
+  .clickable-button {
+    width: 30%; /* Increase button width */
+    padding: 15px; /* Increase padding for larger buttons */
+    text-align: center;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50%;
+    
+  }
+
+  .button-image {
+    width: 20%;
+    height: 20%px;
+    margin-right: 70%;
+  }
+
+  /* Arrow Right Icon */
+  .arrow-icon {
+    font-size: 20px;
+    color: skyblue;
+  }
+  
+  /* Styles for the Services Section */
+.services {
+  background-color: #09203a; /* Add a background color for better visibility */
+  padding: 60px 0; /* Adjust padding as needed */
+  color: #fff; /* Text color */
+}
+
+/* Title Container */
+.title-container {
+  text-align: center;
+  margin-bottom: 20px; /* Add space below the title */
+}
+
+/* Border Container */
+.border-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Border Styles */
+.border {
+  border: 2px solid skyblue;
+  padding: 10px;
+  text-align: center;
+  width: 48%; /* Adjust width as needed */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  border-radius: 10px; /* Add curved corners */
+  overflow: hidden; /* Ensure the overflow content does not protrude from curved corners */
+}
+
+.border h4 {
+  margin: 0;
+  font-size: 16px; /* Decrease font size */
+}
+
+.border p {
+  font-size: 12px; /* Decrease font size */
+}
+
+
+/* Image Container */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto; /* Center the images horizontally */
+}
+
+/* Calendar Image */
+.calendar-image,
+.gps-image {
+  width: 500px; /* Adjust size as needed */
+  height: auto;
+}

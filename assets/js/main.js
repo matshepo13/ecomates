@@ -149,3 +149,55 @@
   });
 
 })(jQuery);
+
+const bins = document.querySelectorAll('.recycle-bin');
+    const hiddenCard = document.getElementById('hidden-card');
+    const attemptsElement = document.getElementById('attempts');
+
+    let attempts = 4;
+
+    bins.forEach(bin => {
+      bin.addEventListener('dragover', dragOver);
+      bin.addEventListener('dragenter', dragEnter);
+      bin.addEventListener('dragleave', dragLeave);
+      bin.addEventListener('drop', drop);
+    });
+
+    function dragOver(e) {
+      e.preventDefault();
+    }
+
+    function dragEnter(e) {
+      e.preventDefault();
+      this.classList.add('over');
+    }
+
+    function dragLeave() {
+      this.classList.remove('over');
+    }
+
+    function drop() {
+      const binType = this.getAttribute('data-type');
+
+      if (binType === 'paper') {
+        // Correct bin selected
+        alert('Correct! Paper should be recycled.');
+        resetGame();
+      } else {
+        // Incorrect bin selected
+        attempts--;
+        attemptsElement.innerText = `Attempts left: ${attempts}`;
+
+        if (attempts === 0) {
+          alert('Game over! You have run out of attempts.');
+          resetGame();
+        }
+      }
+      
+      this.classList.remove('over');
+    }
+
+    function resetGame() {
+      attempts = 4;
+      attemptsElement.innerText = `Attempts left: ${attempts}`;
+    }
